@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png">
 
-    <title>Natours | Exciting tours for adventurous people</title>
+    <title>LAZY READER </title>
 </head>
 
 <body>
@@ -27,11 +27,11 @@
 
     <nav class="navigation__nav">
         <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Register</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Login</a></li>
+            <li class="navigation__item"><a href="#section-test" class="navigation__link"><span>03</span>Try For Free</a></li>
+            <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>04</span>Check Plans</a></li>
+            <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>05</span>Stories</a></li>
         </ul>
     </nav>
 </div>
@@ -43,11 +43,11 @@
 
     <div class="header__text-box">
         <h1 class="heading-primary">
-            <span class="heading-primary--main">Outdoors</span>
-            <span class="heading-primary--sub">is where life happens</span>
+            <span class="heading-primary--main">lazy reader</span>
+            <span class="heading-primary--sub">Read less, gain more</span>
         </h1>
 
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-test" class="btn btn--white btn--animated">Try Our product</a>
     </div>
 </header>
 
@@ -55,24 +55,23 @@
     <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
-                Exciting tours for adventurous people
+               This section suppose to be about us
             </h2>
         </div>
 
         <div class="row">
             <div class="col-1-of-2">
-                <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Here is a head of paragraph</h3>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                    ducimus quam nisi exercitationem omnis earum qui.
+                   I have no idea what to write here, but i have to, if i didn't it will look bad, but after thinking who gives a ****
                 </p>
 
-                <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">oh, god another head of paragraph</h3>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
+                    yeah it looks really bad
                 </p>
 
-                <a href="#" class="btn-text">Learn more &rarr;</a>
+                <a href="#" class="btn-text"></a>
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
@@ -105,55 +104,41 @@
         </div>
     </section>
 
-    <section class="section-features">
-
+    <section class="section-features" id="section-test">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class=" heading-secondary heading-secondary--sub">
+                Try it for free
+            </h2>
+        </div>
         <div class="row">
-            <div class="col-1-of-4">
-                <div class="feature-box">
-                    <i class="feature-box__icon icon-basic-world"></i>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                    <p class="feature-box__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                    </p>
+            <div class="col-2-of-4">
+                <form id="test-form" action="/">
+                    <div class="feature-box">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Put your text sample here</h3>
+                        <textarea class="form__input u-full-width" id="form-sample" rows="15"></textarea>
+                    </div>
+                    <div class="form__group" id="form-submit">
+                        <button class="btn btn--summarize u-margin-top-small ">Summarize</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-2-of-4">
+                <div class="feature-box form__group">
+                    <h3 class="heading-tertiary u-margin-bottom-small">The summarization output</h3>
+                    <textarea class="form__input u-full-width" id="form-result" rows="15"></textarea>
                 </div>
             </div>
 
-            <div class="col-1-of-4">
-                <div class="feature-box">
-                    <i class="feature-box__icon icon-basic-compass"></i>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-                    <p class="feature-box__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                    </p>
-                </div>
-            </div>
 
-            <div class="col-1-of-4">
-                <div class="feature-box">
-                    <i class="feature-box__icon icon-basic-map"></i>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-                    <p class="feature-box__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-1-of-4">
-                <div class="feature-box">
-                    <i class="feature-box__icon icon-basic-heart"></i>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-                    <p class="feature-box__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 
     <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
-                Most popular tours
+                Select Your plan
             </h2>
         </div>
 
@@ -165,15 +150,12 @@
                             &nbsp;
                         </div>
                         <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                            <span class="card__heading-span card__heading-span--1">The lazy Reader</span>
                         </h4>
                         <div class="card__details">
                             <ul>
-                                <li>3 day tours</li>
-                                <li>Up to 30 people</li>
-                                <li>2 tour guides</li>
-                                <li>Sleep in cozy hotels</li>
-                                <li>Difficulty: easy</li>
+                                <li>upload plain text</li>
+
                             </ul>
                         </div>
                     </div>
@@ -181,9 +163,9 @@
                         <div class="card__cta">
                             <div class="card__price-box">
                                 <p class="card__price-only">Only</p>
-                                <p class="card__price-value">$297</p>
+                                <p class="card__price-value">Free</p>
                             </div>
-                            <a href="#popup" class="btn btn--white">Book now!</a>
+                            <a href="#section-test" class="btn btn--white">Try it</a>
                         </div>
                     </div>
                 </div>
@@ -197,15 +179,14 @@
                             &nbsp;
                         </div>
                         <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
+                            <span class="card__heading-span card__heading-span--2">the laziest reader</span>
                         </h4>
                         <div class="card__details">
                             <ul>
-                                <li>7 day tours</li>
-                                <li>Up to 40 people</li>
-                                <li>6 tour guides</li>
-                                <li>Sleep in provided tents</li>
-                                <li>Difficulty: medium</li>
+                                <li>Upload Plain Text</li>
+                                <li>Upload word & PDF files</li>
+                                <li>Summarize over 3800 word</li>
+
                             </ul>
                         </div>
 
@@ -230,15 +211,16 @@
                             &nbsp;
                         </div>
                         <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
+                            <span class="card__heading-span card__heading-span--3">The Slooooth guy</span>
                         </h4>
                         <div class="card__details">
                             <ul>
-                                <li>5 day tours</li>
-                                <li>Up to 15 people</li>
-                                <li>3 tour guides</li>
-                                <li>Sleep in provided tents</li>
-                                <li>Difficulty: hard</li>
+                                <li>Upload Plain Text</li>
+                                <li>Upload word & PDF files</li>
+                                <li>Upload voice formats</li>
+                                <li>Summarize over 9000254 word</li>
+
+
                             </ul>
                         </div>
 
@@ -257,11 +239,11 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn btn--green">Discover all tours</a>
+            <a href="#" class="btn btn--green">Register Now</a>
         </div>
     </section>
 
-    <section class="section-stories">
+    <section class="section-stories" id="section-stories">
         <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
                 <source src="img/video.mp4" type="video/mp4">
@@ -283,7 +265,7 @@
                     <figcaption class="story__caption">Mary Smith</figcaption>
                 </figure>
                 <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">oh my god it was the best thing that i ever put money on</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
                         ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
@@ -300,7 +282,7 @@
                     <figcaption class="story__caption">Jack Wilson</figcaption>
                 </figure>
                 <div class="story__text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">I was stupid because i don't read, now I have false sense of intellect and superiority  </h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
                         ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
@@ -311,7 +293,7 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn-text">Read all stories &rarr;</a>
+
         </div>
     </section>
 
@@ -368,9 +350,8 @@
     <div class="footer__logo-box">
 
         <picture class="footer__logo">
-            <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
-                    media="(max-width: 37.5em)">
-            <img srcset="/images/logo-green-1x.png 1x, /images/logo-green-2x.png 2x" alt="Full logo" src="/images/logo-green-2x.png">
+
+            here should be a logo
         </picture>
 
 
@@ -390,10 +371,9 @@
         </div>
         <div class="col-1-of-2">
             <p class="footer__copyright">
-                Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
-                Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
-                and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
-                Schmedtmann, is of course highly appreciated!
+                Built by <a href="#" class="footer__link">me, duh </a> for the graduation project <a href="#" class="footer__link">Lazy Reader</a>.
+                no need to thank me
+
             </p>
         </div>
     </div>
@@ -494,6 +474,9 @@
     </div>
 </section>
 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/summarize.js"></script>
 
 </body>
 </html>
