@@ -279,6 +279,10 @@ body {
   margin-top: 10rem !important;
 }
 
+.u-margin-left-small {
+  margin-left: 3rem !important;
+}
+
 .u-full-width {
   width: 100% !important;
 }
@@ -1304,6 +1308,24 @@ body {
 @media only screen and (max-width: 56.25em) {
   .book__form {
     width: 100%;
+  }
+}
+
+.section-login {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+  /* margin-left: 21vh; */
+  border-radius: 1rem;
+  box-shadow: -3px 4px 55px -7px #fcfffc;
+  width: 66rem;
+  height: 30rem;
+  position: absolute;
+  top: 24rem;
+  left: 44rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-login {
+    padding: 20rem 0;
   }
 }
 

@@ -37,6 +37,7 @@
 </div>
 
 <header class="header">
+
     <div class="header__logo-box">
         <img src="/images/logo-white.png" alt="Logo" class="header__logo">
     </div>
@@ -309,7 +310,7 @@
                         </div>
 
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                            <input type="text" class="form__input u-" placeholder="Full name" id="name" required>
                             <label for="name" class="form__label">Full name</label>
                         </div>
 
@@ -403,6 +404,7 @@
             <a href="#" class="btn btn--green">Book now</a>
         </div>
     </div>
+
 </div>
 
 <!--
@@ -474,9 +476,19 @@
     </div>
 </section>
 -->
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="js/summarize.js"></script>
+<script src="js/particles.js"></script>
+<script>
+    $('#start').click(function(){
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    })
+
+</script>
 
 </body>
 </html>
