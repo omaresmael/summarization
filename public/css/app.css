@@ -231,6 +231,10 @@ body {
   text-align: center !important;
 }
 
+.u-bg-color-white {
+  background: white !important;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
@@ -1316,7 +1320,6 @@ body {
   padding: 3rem 0;
   /* margin-left: 21vh; */
   border-radius: 1rem;
-  box-shadow: -3px 4px 55px -7px #fcfffc;
   width: 66rem;
   height: 30rem;
   position: absolute;
@@ -1325,6 +1328,23 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-login {
+    padding: 20rem 0;
+  }
+}
+
+.section-register {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+  /* margin-left: 21vh; */
+  border-radius: 1rem;
+  width: 66rem;
+  height: 50rem;
+  position: absolute;
+  top: 10rem;
+  left: 44rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-register {
     padding: 20rem 0;
   }
 }

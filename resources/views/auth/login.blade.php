@@ -25,15 +25,15 @@
         </h2>
         <form action="/login" method="post">
             <div class="form__group">
-                <input type="email" class="form__input u-margin-left-small" placeholder="Email address" name="email" id="email" required>
+                <input type="email" class="form__input u-margin-left-small u-bg-color-white" placeholder="Email address" name="email" id="email" required>
                 <label for="email" class="form__label">Email address</label>
             </div>
             <div class="form__group">
-                <input type="password" class="form__input u-margin-left-small" placeholder="Password" name="password" id="password" required>
+                <input type="password" class="form__input u-margin-left-small u-bg-color-white" placeholder="Password" name="password" id="password" required>
                 <label for="name" class="form__label ">Password</label>
             </div>
             <div class="form__group">
-                <button type="submit" class="btn btn--white ">Login</button>
+                <button type="submit" class="btn btn--white  ">Login</button>
             </div>
         </form>
     </div>
