@@ -27,8 +27,8 @@
 
     <nav class="navigation__nav">
         <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Register</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Login</a></li>
+            <li class="navigation__item"><a href="/register" class="navigation__link"><span>01</span>Register</a></li>
+            <li class="navigation__item"><a href="/login" class="navigation__link"><span>02</span> Login</a></li>
             <li class="navigation__item"><a href="#section-test" class="navigation__link"><span>03</span>Try For Free</a></li>
             <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>04</span>Check Plans</a></li>
             <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>05</span>Stories</a></li>

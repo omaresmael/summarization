@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/summarization/test',[SummarizationController::class,'test']);
+Route::post('/upload',[SummarizationController::class,'upload']);
