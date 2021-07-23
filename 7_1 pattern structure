@@ -1,0 +1,36 @@
+sass/
+|
+|– abstracts/
+|   |– _functions.scss
+|   |– _mixins.scss
+|   |– _variables.scss
+|
+|– base/
+|   |– _animations.scss
+|   |– _base.scss
+|   |– _typography.scss
+|   |– _utilities.scss
+|
+|– components/
+|   |– _button.scss
+|   |– _bg-video.scss
+|   |– _card.scss
+|   |– feature-box.scss
+|   |– form.scss
+|   |– _composition.scss
+|   |– _story.scss
+|
+|– layout/
+|   |– _navigation.scss
+|   |– _grid.scss
+|   |– _header.scss
+|   |– _footer.scss
+|
+|– pages/
+|   |– _home.scss
+|   |– _login.scss
+|   |– _register.scss
+|   |– _subscribe.scss
+|
+
+`– app.scss

@@ -15,12 +15,12 @@
     <title>LAZY READER </title>
 </head>
 
-<body style="background: #2d3748; position: relative;">
+<body style="background: #2d3748; position: relative; overflow-y: hidden">
 <div id="particles-js"></div>
 
 <section class="section-login">
     <div class="u-center-text u-margin-bottom-big">
-        <h2 class=" heading-secondary heading-secondary--sub">
+        <h2 class=" heading-secondary">
             Login
         </h2>
         <form action="/login" method="post">

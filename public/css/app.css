@@ -1323,8 +1323,8 @@ body {
   width: 66rem;
   height: 30rem;
   position: absolute;
-  top: 24rem;
-  left: 44rem;
+  top: 19rem;
+  left: 34.5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-login {
@@ -1338,13 +1338,30 @@ body {
   /* margin-left: 21vh; */
   border-radius: 1rem;
   width: 66rem;
-  height: 50rem;
+  height: 51rem;
   position: absolute;
-  top: 10rem;
-  left: 44rem;
+  top: 7rem;
+  left: 34.5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-register {
+    left: 18.5rem;
+  }
+}
+
+.section-subscribe {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+  /* margin-left: 21vh; */
+  border-radius: 1rem;
+  width: 66rem;
+  height: 36rem;
+  position: absolute;
+  top: 10rem;
+  left: 34.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-subscribe {
     padding: 20rem 0;
   }
 }

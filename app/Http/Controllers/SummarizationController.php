@@ -14,20 +14,17 @@ class SummarizationController extends Controller
 
     public function test(Request $request)
     {
-        $fileName = 'test'.date("Y-m-d").time();
+        $fileName = 'test'.date('y-m-d').time();
         $text = $request->text;
 
         Storage::put('test/'.$fileName.'.txt', $text);
         $url = Storage::url('test/'.$fileName);
          while(1)
          {
-             if(Storage::exists('test/'.$fileName.'.txt'))
-                 return Storage::disk('local')->get('test/'.$fileName.'.txt');
+             if(Storage::exists('result/'.$fileName.'_summarized.txt'))
+                 return Storage::disk('local')->get('result/'.$fileName.'_summarized.txt');
              set_time_limit(30);
          }
-
-
-
 
     }
     public function upload(Request $request)
@@ -36,8 +33,9 @@ class SummarizationController extends Controller
         {
             $file = $request->file('file');
             $fileName = $file->getClientOriginalName();
-            $fileName = Str::of($fileName)->basename('.xlsx');
-            $file->storeAs('/uploads',$fileName.date("Y-m-d").time().'.xlsx');
+            $extension = '.'.$file->extension();
+            $fileName = Str::of($fileName)->basename($extension);
+            $file->storeAs('/uploads',$fileName.date("Y-m-d").time().$extension);
         }
     }
 }

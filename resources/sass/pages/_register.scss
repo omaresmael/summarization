@@ -1,18 +1,21 @@
+
 .section-register {
     background-color: #f7f7f7;
     padding: 3rem 0;
+
     /* margin-left: 21vh; */
     border-radius: 1rem;
     //box-shadow: -3px 4px 55px -7px #fcfffc;
     width: 66rem;
-    height: 50rem;
+    height: 51rem;
     position: absolute;
-    top: 10rem;
-    left: 44rem;
+    top: 7rem;
+    left: 34.5rem;
 
 
     @include respond(tab-port) {
-        padding: 20rem 0;
+
+        left: 18.5rem;
     }
 }
 

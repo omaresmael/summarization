@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png">
 
-    <title>LAZY READER </title>
+    <title>LAZY READER | Register </title>
 </head>
 
-<body style="background: #2d3748; position: relative;">
+<body style="background: #2d3748; position: relative; overflow-y: hidden">
 <div id="particles-js"></div>
 
 <section class="section-register">
     <div class="u-center-text u-margin-bottom-big">
-        <h2 class=" heading-secondary heading-secondary--sub">
+        <h2 class=" heading-secondary ">
             Register
         </h2>
         <form action="/register" method="post">
@@ -57,6 +57,7 @@
 
                 @endif
             </div>
+
             <div class="form__group">
                 <button type="submit" class="btn btn--white ">Register</button>
             </div>
@@ -70,6 +71,8 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="js/summarize.js"></script>
 <script src="js/particles.js"></script>
+
+
 <script>
     $(document).ready(function(){
         particlesJS.load('particles-js', 'particlesjs-config.json', function() {
@@ -78,6 +81,8 @@
     })
 
 </script>
+
+
 
 </body>
 </html>
