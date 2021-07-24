@@ -44,9 +44,9 @@ class SubscriptionController extends Controller
                     'email' => $user->email,
                 ]);
 
-            return back()->with('success','Subscription is completed.');
+            return redirect('/home');
         } catch (Exception $e) {
-            return back()->with('success',$e->getMessage());
+            return redirect('/home');
         }
 
     }

@@ -24,6 +24,7 @@
             Login
         </h2>
         <form action="/login" method="post">
+            @csrf
             <div class="form__group">
                 <input type="email" class="form__input u-margin-left-small u-bg-color-white" placeholder="Email address" name="email" id="email" required>
                 <label for="email" class="form__label">Email address</label>

@@ -12,19 +12,28 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png">
 
-    <title>LAZY READER </title>
+    <title>LAZY READER | Dashboard</title>
+    <style>
+        .filepond--root,
+        .filepond--root .filepond--drop-label {
+            height: 21rem;
+        }
+    </style>
 </head>
 
-<body style="background: #2d3748; position: relative;">
+<body style="background: #2d3748; position: relative; overflow-y: hidden">
 <div id="particles-js"></div>
 
 <section class="section-login">
     <div class="u-center-text u-margin-bottom-big">
-        <h2 class=" heading-secondary heading-secondary--sub">
-            Login
+        <h2 class=" heading-secondary ">
+            Upload File
         </h2>
         <form action="/login" method="post">
-            <input type="file" name="file" id="file">
+            <div style="height: 500px">
+                <input type="file"  name="file" id="file">
+            </div>
+
         </form>
     </div>
 </section>
@@ -45,6 +54,17 @@
         const pond = FilePond.create(inputElement);
         FilePond.setOptions({
             server: '/api/upload',
+        });
+        pond.on('processfile', (error, file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            var blob = new Blob([file]);
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = "Sample.pdf";
+            link.click();
         });
         particlesJS.load('particles-js', 'particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');

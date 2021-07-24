@@ -21,7 +21,7 @@ class SummarizationController extends Controller
         $url = Storage::url('test/'.$fileName);
          while(1)
          {
-             if(Storage::exists('result/'.$fileName.'_summarized.txt'))
+             if(Storage::exists('result/'.$fileName.'_summarized.txt') && Storage::disk('local')->get('result/'.$fileName.'_summarized.txt') != '')
                  return Storage::disk('local')->get('result/'.$fileName.'_summarized.txt');
              set_time_limit(30);
          }
@@ -29,13 +29,30 @@ class SummarizationController extends Controller
     }
     public function upload(Request $request)
     {
-        if ($request->hasFile('file'))
+
+        if ($request->has('file'))
         {
+
             $file = $request->file('file');
+
             $fileName = $file->getClientOriginalName();
+
             $extension = '.'.$file->extension();
+
             $fileName = Str::of($fileName)->basename($extension);
-            $file->storeAs('/uploads',$fileName.date("Y-m-d").time().$extension);
+
+            $fileName = $fileName.date("Y-m-d").time();
+
+            $file->storeAs('/test',$fileName.$extension);
+
+            while(1)
+            {
+                if(Storage::exists('result/'.$fileName.'_summarized.pdf')){
+                    return Storage::download('result/'.$fileName.'_summarized.pdf');
+                }
+
+                set_time_limit(30);
+            }
         }
     }
 }
