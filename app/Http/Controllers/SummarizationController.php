@@ -42,13 +42,17 @@ class SummarizationController extends Controller
             $fileName = Str::of($fileName)->basename($extension);
 
             $fileName = $fileName.date("Y-m-d").time();
+            
+            // Storage::put('test', $fileName.$extension);
 
-            $file->storeAs('/test',$fileName.$extension);
-
+            $file->storeAs('public/test',$fileName.$extension);
+            
+            
             while(1)
             {
-                if(Storage::exists('result/'.$fileName.'_summarized.pdf')){
-                    return Storage::download('result/'.$fileName.'_summarized.pdf');
+                if(Storage::exists('public/result/'.$fileName.'_summarized.pdf')){
+                    $url = asset('storage/result/'.$fileName.'_summarized.pdf');
+                    return $url;
                 }
 
                 set_time_limit(30);

@@ -53,19 +53,28 @@
         // Create a FilePond instance
         const pond = FilePond.create(inputElement);
         FilePond.setOptions({
-            server: '/api/upload',
-        });
-        pond.on('processfile', (error, file) => {
-            if (error) {
-                console.log('Oh no');
-                return;
+            // server: '/api/upload',
+            server: {
+        url: '/api/upload',
+        process: {
+            onload: (url) => {
+                // select the right value in the response here and return
+                console.log(url);
+                window.open(
+                url,
+                '_blank' // <- This is what makes it open in a new window.
+                );  
             }
-            var blob = new Blob([file]);
-            var link = document.createElement('a');
-            link.href = window.URL.createObjectURL(blob);
-            link.download = "Sample.pdf";
-            link.click();
+        }}
+            
         });
+        // pond.on('processfile', (error, file) => {
+        //     if (error) {
+        //         console.log('Oh no');
+        //         return;
+        //     }
+            
+        // });
         particlesJS.load('particles-js', 'particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');
         });
