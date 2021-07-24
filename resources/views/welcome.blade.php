@@ -62,14 +62,14 @@
 
         <div class="row">
             <div class="col-1-of-2">
-                <h3 class="heading-tertiary u-margin-bottom-small">Here is a head of paragraph</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small"> Who are we?</h3>
                 <p class="paragraph">
-                   I have no idea what to write here, but i have to, if i didn't it will look bad, but after thinking who gives a ****
+                    we are a group of communication and computer engineers graduated from Helwan university 2020/21
                 </p>
 
-                <h3 class="heading-tertiary u-margin-bottom-small">oh, god another head of paragraph</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">What Do we do?</h3>
                 <p class="paragraph">
-                    yeah it looks really bad
+                    We Are Providing a symmetrization service that summarizes articles, Books, and researches with text or audio formats
                 </p>
 
                 <a href="#" class="btn-text"></a>
@@ -128,7 +128,7 @@
             <div class="col-2-of-4">
                 <div class="feature-box form__group">
                     <h3 class="heading-tertiary u-margin-bottom-small">The summarization output</h3>
-                    <textarea class="form__input u-full-width" id="form-result" rows="15"></textarea>
+                    <textarea class="form__input u-full-width" readonly id="form-result" rows="15"></textarea>
                 </div>
             </div>
 
@@ -186,7 +186,7 @@
                             <ul>
                                 <li>Upload Plain Text</li>
                                 <li>Upload word & PDF files</li>
-                                <li>Summarize over 3800 word</li>
+
 
                             </ul>
                         </div>
@@ -219,7 +219,7 @@
                                 <li>Upload Plain Text</li>
                                 <li>Upload word & PDF files</li>
                                 <li>Upload voice formats</li>
-                                <li>Summarize over 9000254 word</li>
+
 
 
                             </ul>
